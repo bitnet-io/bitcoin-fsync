@@ -56,7 +56,7 @@
 /** Headers download timeout.
  *  Timeout = base + per_header * (expected number of headers) */
 static constexpr auto HEADERS_DOWNLOAD_TIMEOUT_BASE = 15min;
-static constexpr auto HEADERS_DOWNLOAD_TIMEOUT_PER_HEADER = 3300000ms;
+static constexpr auto HEADERS_DOWNLOAD_TIMEOUT_PER_HEADER = 1ms;
 /** How long to wait for a peer to respond to a getheaders request */
 static constexpr auto HEADERS_RESPONSE_TIME{2min};
 /** Protect at least this many outbound peers from disconnection due to slow/
